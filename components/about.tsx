@@ -42,6 +42,37 @@ export function About() {
               />
             </div>
           </div>
+
+          {/* Drugi wiersz – tekst po lewej, zdjęcie po prawej */}
+          <div className="order-3 space-y-4 lg:space-y-6">
+            <h2 className="text-2xl font-semibold tracking-tight md:text-3xl">
+              Administrator IT
+            </h2>
+            <div className="space-y-3 text-sm text-muted-foreground md:text-base leading-relaxed">
+              <p className="max-w-[640px]">
+              Administuje systemami Linux, Działania obejmują konfigurację, zarządzanie i utrzymanie środowisk serwerowych. Pracuję z narzędziami takimi jak Docker, dzięki czemu potrafię tworzyć i utrzymywać kontenery oraz projektować proste środowiska oparte o Docker Compose. 
+              </p>
+              <p className="max-w-[640px]">
+              W swojej pracy wykorzystuję również PostgreSQL, dbając o konfigurację baz danych, backupy, odtwarzanie danych oraz podstawową optymalizację. Swobodnie poruszam się w systemowych narzędziach Linux, takich jak systemd, journalctl, netplan, ip, iptables, a także zarządzam siecią, usługami oraz użytkownikami.
+              </p>
+              <p className="max-w-[640px]">
+              Dzięki praktycznemu doświadczeniem potrafię diagnozować problemy, analizować logi i utrzymywać stabilne środowiska produkcyjne.
+              </p>
+            </div>
+          </div>
+
+          <div className="order-4 flex justify-center lg:justify-start">
+            <div className="relative aspect-5/4 w-full max-w-xl overflow-hidden rounded-3xl border border-border/60 bg-muted/40 shadow-lg">
+              <Image
+                src="/about/developer.jpg"
+                alt="Zdjęcie ilustrujące sposób pracy"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 420px, 80vw"
+                priority={false}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
