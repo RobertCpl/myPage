@@ -53,14 +53,12 @@ export function Blog() {
     >
       <div className="mx-auto w-full max-w-[1200px] px-4 py-16 lg:py-20">
         <div className="mb-12 space-y-3 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#ff5f45]">
-            Latest News
-          </p>
+          
           <h2
             id="blog-heading"
             className="text-2xl font-semibold tracking-tight md:text-3xl"
           >
-            Checkout My Recent Blogs
+            Ostatnie wpisy
           </h2>
           <p className="mx-auto max-w-[640px] text-sm leading-relaxed text-muted-foreground md:text-base">
             Dzielę się praktycznymi doświadczeniami z projektów – od
@@ -76,7 +74,7 @@ export function Blog() {
               className="flex h-full flex-col overflow-hidden rounded-3xl border border-border/40 bg-muted/40 shadow-lg transition-transform duration-200 hover:-translate-y-1 hover:shadow-xl"
             >
               <Link href={`/blog/${post.slug}`} className="group block">
-                <div className="relative aspect-[15/9] w-full overflow-hidden">
+                <div className="relative aspect-15/9 w-full overflow-hidden">
                   <Image
                     src={post.imageSrc}
                     alt={post.title}
