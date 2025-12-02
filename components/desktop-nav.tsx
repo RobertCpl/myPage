@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import Link from "next/link";
 
 import {
@@ -12,18 +11,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { mainNavItems } from "@/components/nav-items";
 import { cn } from "@/lib/utils";
-
-function handleScroll(
-  event: React.MouseEvent<HTMLAnchorElement>,
-  id: string,
-) {
-  event.preventDefault();
-
-  const target = document.getElementById(id);
-  if (target) {
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
 
 export function DesktopNav() {
   return (
@@ -40,7 +27,7 @@ export function DesktopNav() {
             >
               <Link
                 href={`#${item.id}`}
-                onClick={(event) => handleScroll(event, item.id)}
+                className="hover:text-red-600!"
               >
                 {item.label}
               </Link>

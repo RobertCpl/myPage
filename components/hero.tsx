@@ -21,9 +21,8 @@ export function Hero() {
           {/* Lewa kolumna – tytuł i podtytuł */}
           <div className="space-y-6 text-white">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-200">
-              Frontend Developer
+              Frontend Developer, system administrator
             </p>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-200"> System administrator</p>
             <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
               Buduję nowoczesne, szybkie i przejrzyste aplikacje webowe.
             </h1>
@@ -33,11 +32,18 @@ export function Hero() {
               estetycznym designie.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Button size="lg">
+              {/* <Button size="lg">
                 Zobacz portfolio
-              </Button>
-              <Button variant="outline" size="lg" className="bg-white/10 text-white hover:bg-white/20">
-                Skontaktuj się
+              </Button> */}
+              <Button
+                asChild
+                variant="default"
+                size="lg"
+                className="bg-[#ff5f45] text-white hover:bg-white/20"
+              >
+                <a href="#contact" className="scroll-smooth">
+                  Skontaktuj się
+                </a>
               </Button>
             </div>
           </div>

@@ -2,7 +2,7 @@ import { Hero } from "@/components/hero";
 import { About } from "@/components/about";
 import { Services } from "@/components/services";
 import { Projects } from "@/components/project";
-import { Blog } from "@/components/blog";
+// import { Blog } from "@/components/blog";
 import { ContactSection } from "@/components/contact";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       {/* Sekcja Projects */}
       <Projects />
       {/* Sekcja Blog */}
-      <Blog />
+      {/* <Blog /> */}
       {/* Sekcja Kontakt */}
       <ContactSection />
     </main>

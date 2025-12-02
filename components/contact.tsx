@@ -64,7 +64,7 @@
 
    return (
      <form
-       className="space-y-6"
+      className="space-y-6 text-white"
        onSubmit={(event) => {
          event.preventDefault();
          void form.handleSubmit();
@@ -83,7 +83,9 @@
          >
            {(field) => (
              <div className="space-y-1.5">
-               <Label htmlFor={field.name}>Imię</Label>
+               <Label htmlFor={field.name} className="text-white">
+                 Imię
+               </Label>
                <Input
                  id={field.name}
                  value={field.state.value}
@@ -124,7 +126,9 @@
          >
            {(field) => (
              <div className="space-y-1.5">
-               <Label htmlFor={field.name}>E-mail</Label>
+               <Label htmlFor={field.name} className="text-white">
+                 E-mail
+               </Label>
                <Input
                  id={field.name}
                  type="email"
@@ -162,7 +166,9 @@
          >
            {(field) => (
              <div className="space-y-1.5">
-               <Label htmlFor={field.name}>Wiadomość</Label>
+               <Label htmlFor={field.name} className="text-white">
+                 Wiadomość
+               </Label>
                <Textarea
                  id={field.name}
                  value={field.state.value}
@@ -170,7 +176,7 @@
                    field.handleChange(event.target.value)
                  }
                  onBlur={field.handleBlur}
-                 rows={5}
+                rows={10}
                  aria-invalid={
                    field.state.meta.errors.length > 0 ? "true" : "false"
                  }
@@ -211,7 +217,7 @@
            <Button
              type="submit"
              disabled={!canSubmit || isSubmitting}
-             className="w-full sm:w-auto"
+            className="w-full sm:w-auto bg-[#ff5f45] hover:bg-[#e24e35] text-white"
            >
              {isSubmitting ? "Wysyłanie..." : "Wyślij"}
            </Button>
@@ -223,10 +229,10 @@
 
  function ContactDetails() {
    return (
-     <div className="space-y-6 rounded-3xl border border-border/40 bg-muted/40 p-6 shadow-lg lg:p-8">
+    <div className="space-y-6 rounded-3xl p-6 text-white">
        <div className="space-y-2">
          <h3 className="text-xl font-semibold">Dane kontaktowe</h3>
-         <p className="text-sm text-muted-foreground leading-relaxed">
+        <p className="text-sm leading-relaxed">
            Masz pytania dotyczące projektu, współpracy lub wdrożenia? Napisz lub
            zadzwoń – chętnie porozmawiam o Twoich potrzebach.
          </p>
@@ -237,10 +243,10 @@
            <p className="text-xs font-semibold uppercase tracking-wide text-[#ff5f45]">
              E-mail
            </p>
-           <p className="font-medium text-foreground">
+          <p className="font-medium">
              kontakt@twojadomena.pl
            </p>
-           <p className="text-xs text-muted-foreground">
+          <p className="text-xs">
              Preferowana forma kontaktu – odpowiadam zazwyczaj tego samego dnia.
            </p>
          </div>
@@ -249,8 +255,8 @@
            <p className="text-xs font-semibold uppercase tracking-wide text-[#ff5f45]">
              Telefon
            </p>
-           <p className="font-medium text-foreground">+48 600 000 000</p>
-           <p className="text-xs text-muted-foreground">
+          <p className="font-medium">+48 600 000 000</p>
+          <p className="text-xs">
              Dostępny w dni robocze w godzinach 9:00–17:00.
            </p>
          </div>
@@ -259,12 +265,12 @@
            <p className="text-xs font-semibold uppercase tracking-wide text-[#ff5f45]">
              Adres
            </p>
-           <p className="font-medium text-foreground">
+          <p className="font-medium">
              ul. Przykładowa 1
              <br />
              00-000 Warszawa, Polska
            </p>
-           <p className="text-xs text-muted-foreground">
+          <p className="text-xs">
              Spotkania stacjonarne po wcześniejszym umówieniu terminu.
            </p>
          </div>
@@ -288,19 +294,19 @@
            >
              Kontakt
            </h2>
-           <p className="mx-auto max-w-[640px] text-sm text-muted-foreground md:text-base leading-relaxed">
+          <p className="mx-auto max-w-[640px] text-sm text-muted-foreground md:text-base leading-relaxed">
              Opowiedz krótko o swoim projekcie lub potrzebie – przygotuję
              propozycję dalszych kroków i możliwe scenariusze współpracy.
            </p>
          </div>
 
-         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
-           <div className="space-y-6">
+        <div className="grid gap-10 lg:grid-cols-5 lg:gap-12">
+         <div className="space-y-6 bg-[#1023b8] rounded-3xl p-6 text-white lg:col-span-3">
              <div className="space-y-2">
                <h3 className="text-xl font-semibold md:text-2xl">
                  Formularz kontaktowy
                </h3>
-               <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm leading-relaxed">
                  Wypełnij krótkie pola poniżej – im więcej szczegółów podasz,
                  tym lepiej będę mógł przygotować odpowiedź.
                </p>
@@ -308,7 +314,7 @@
              <ContactForm />
            </div>
 
-           <div className="flex items-stretch">
+         <div className="flex items-stretch bg-[#4d8fe9] rounded-3xl p-6 text-white lg:col-span-2">
              <ContactDetails />
            </div>
          </div>
