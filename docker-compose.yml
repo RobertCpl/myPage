@@ -1,0 +1,14 @@
+
+
+services:
+  web:
+    image: robertcieplinski/mypage:latest
+    env_file:
+      - .env.production
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    networks:
+      - internal-net
+
+
