@@ -234,7 +234,7 @@
          <h3 className="text-xl font-semibold">Dane kontaktowe</h3>
         <p className="text-sm leading-relaxed">
            Masz pytania dotyczące projektu, współpracy lub wdrożenia? Napisz lub
-           zadzwoń – chętnie porozmawiam o Twoich potrzebach.
+           zadzwoń, chętnie porozmawiam o Twoich potrzebach.
          </p>
        </div>
 
@@ -244,7 +244,7 @@
              E-mail
            </p>
           <p className="font-medium">
-             kontakt@twojadomena.pl
+             reconrc@gmail.com
            </p>
           <p className="text-xs">
              Preferowana forma kontaktu – odpowiadam zazwyczaj tego samego dnia.
@@ -255,9 +255,9 @@
            <p className="text-xs font-semibold uppercase tracking-wide text-[#ff5f45]">
              Telefon
            </p>
-          <p className="font-medium">+48 600 000 000</p>
+          <p className="font-medium">+48 608 254 107</p>
           <p className="text-xs">
-             Dostępny w dni robocze w godzinach 9:00–17:00.
+             Dostępny w dni robocze w godzinach 10:00–17:00.
            </p>
          </div>
 
