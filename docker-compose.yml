@@ -1,0 +1,15 @@
+
+
+services:
+  frontend:
+    image: robertcieplinski/mypage:latest
+    container_name: mypage-frontend
+    env_file:
+      - .env.production
+    ports:
+      - "127.0.0.1:3000:3000"
+    restart: unless-stopped
+    networks:
+      - internal-net
+
+
