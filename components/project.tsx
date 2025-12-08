@@ -38,13 +38,13 @@ export function Projects() {
               </p>
               <p className="max-w-[640px]">
                 <span className="relative float-left mr-4 mb-2 inline-block overflow-hidden rounded-xl border border-border/60 bg-muted/40 shadow-md">
-                  <Image
+                  {/* <Image
                     src="/window.svg"
                     alt="Podgląd panelu administracyjnego"
                     width={20}
                     height={96}
                     className="h-auto w-full max-w-44 object-contain"
-                  />
+                  /> */}
                 </span>
                 Backend oparty o Strapi i PostgreSQL pozwala szybko definiować
                 nowe typy danych oraz relacje między nimi, a Next.js zapewnia
@@ -66,13 +66,13 @@ export function Projects() {
             <div className="space-y-3 text-sm text-muted-foreground md:text-base leading-relaxed">
               <p className="max-w-[640px]">
                 <span className="relative float-right ml-4 mb-2 inline-block overflow-hidden rounded-xl border border-border/60 bg-muted/40 shadow-md">
-                  <Image
+                  {/* <Image
                     src="/hero/ja.jpeg"
                     alt="Schemat infrastruktury i monitoringu"
                     width={144}
                     height={96}
                     className="h-auto w-full max-w-44 object-cover"
-                  />
+                  /> */}
                 </span>
                 Równolegle rozwijany był system monitoringu i utrzymania
                 serwerów, który pozwala śledzić stan usług, obciążenie

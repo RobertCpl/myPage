@@ -6,10 +6,10 @@ export type NavItem = {
 export const mainNavItems: NavItem[] = [
   { label: "Home", id: "home" },
   { label: "O mnie", id: "about" },
-  { label: "Portfolio", id: "portfolio" },
+  // { label: "Portfolio", id: "portfolio" },
   { label: "Usługi", id: "services" },
   { label: "Kontakt", id: "contact" },
-  { label: "Blog", id: "blog" },
+  // { label: "Blog", id: "blog" },
 ];
 
 

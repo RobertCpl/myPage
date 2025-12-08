@@ -261,7 +261,7 @@
            </p>
          </div>
 
-         <div className="space-y-1.5">
+         {/* <div className="space-y-1.5">
            <p className="text-xs font-semibold uppercase tracking-wide text-[#ff5f45]">
              Adres
            </p>
@@ -273,7 +273,7 @@
           <p className="text-xs">
              Spotkania stacjonarne po wcześniejszym umówieniu terminu.
            </p>
-         </div>
+         </div> */}
        </div>
      </div>
    );

@@ -15,10 +15,21 @@ export function About() {
             </h2>
             <div className="space-y-3 text-sm text-muted-foreground md:text-base leading-relaxed">
               <p className="max-w-[640px]">
-              Posiadam solidne umiejętności programistyczne w technologiach JavaScript, koncentrując się na tworzeniu nowoczesnych aplikacji webowych. Pracuję z Node.js i Express.js, budując wydajne API oraz backendy oparte na architekturze REST. 
+                Posiadam solidne umiejętności programistyczne w technologiach
+                JavaScript, koncentrując się na tworzeniu nowoczesnych
+                aplikacji webowych. Pracuję z{" "}
+                <span className="font-semibold">Node.js</span> i{" "}
+                <span className="font-semibold">Express.js</span>, budując
+                wydajne API oraz backendy oparte na architekturze REST.
               </p>
               <p className="max-w-[640px]">
-              Bardzo dobrze znam Strapi.js, dzięki czemu potrafię szybko tworzyć elastyczne headless CMS-y i projektować złożone modele danych. Po stronie frontendu korzystam z Next.js i React, tworząc szybkie, skalowalne i przyjazne użytkownikowi interfejsy.
+                Bardzo dobrze znam{" "}
+                <span className="font-semibold">Strapi.js</span>, dzięki czemu
+                potrafię szybko tworzyć elastyczne headless CMS-y i projektować
+                złożone modele danych. Po stronie frontendu korzystam z{" "}
+                <span className="font-semibold">Next.js</span> i{" "}
+                <span className="font-semibold">React</span>, tworząc szybkie,
+                skalowalne i przyjazne użytkownikowi interfejsy.
               </p>
               <p className="max-w-[640px]">
                 W pracy stawiam na przejrzystą komunikację, solidną
@@ -50,10 +61,21 @@ export function About() {
             </h2>
             <div className="space-y-3 text-sm text-muted-foreground md:text-base leading-relaxed">
               <p className="max-w-[640px]">
-              Administuje systemami Linux, Działania obejmują konfigurację, zarządzanie i utrzymanie środowisk serwerowych. Pracuję z narzędziami takimi jak Docker, dzięki czemu potrafię tworzyć i utrzymywać kontenery oraz projektować proste środowiska oparte o Docker Compose. 
+                Administuje systemami{" "}
+                <span className="font-semibold">Linux</span>. Działania obejmują
+                konfigurację, zarządzanie i utrzymanie środowisk serwerowych.
+                Pracuję z narzędziami takimi jak{" "}
+                <span className="font-semibold">Docker</span>, dzięki czemu
+                potrafię tworzyć i utrzymywać kontenery oraz projektować proste
+                środowiska oparte o Docker Compose.
               </p>
               <p className="max-w-[640px]">
-              W swojej pracy wykorzystuję również PostgreSQL, dbając o konfigurację baz danych, backupy, odtwarzanie danych oraz podstawową optymalizację. Swobodnie poruszam się w systemowych narzędziach Linux, takich jak systemd, journalctl, netplan, ip, iptables, a także zarządzam siecią, usługami oraz użytkownikami.
+                W swojej pracy wykorzystuję również{" "}
+                <span className="font-semibold">PostgreSQL</span>, dbając o
+                konfigurację baz danych, backupy, odtwarzanie danych oraz
+                podstawową optymalizację. Swobodnie poruszam się w systemowych
+                narzędziach Linux, takich jak systemd, journalctl, netplan, ip,
+                iptables, a także zarządzam siecią, usługami oraz użytkownikami.
               </p>
               <p className="max-w-[640px]">
               Dzięki praktycznemu doświadczeniem potrafię diagnozować problemy, analizować logi i utrzymywać stabilne środowiska produkcyjne.
@@ -64,7 +86,7 @@ export function About() {
           <div className="order-4 flex justify-center lg:justify-start">
             <div className="relative aspect-5/4 w-full max-w-xl overflow-hidden rounded-3xl border border-border/60 bg-muted/40 shadow-lg">
               <Image
-                src="/about/developer.jpg"
+                src="/about/linux.jpg"
                 alt="Zdjęcie ilustrujące sposób pracy"
                 fill
                 className="object-cover"

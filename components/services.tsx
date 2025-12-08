@@ -1,4 +1,4 @@
-import { Cpu, Smartphone, LayoutPanelTop, Star } from "lucide-react";
+import { Database, PanelsTopLeft, UserRoundCogIcon, Server } from "lucide-react";
 
 const services = [
   {
@@ -6,7 +6,7 @@ const services = [
     title: "Aplikacje frontendowe",
     description:
       "Tworzę nowoczesne, w pełni responsywne aplikacje frontendowe, które świetnie wyglądają i działają na każdym urządzeniu.",
-    icon: Cpu,
+    icon: PanelsTopLeft,
     bgClass: "bg-[#ff5f45]",
   },
   {
@@ -14,7 +14,7 @@ const services = [
     title: "Aplikacje backendowe",
     description:
       "Projektuję nowoczesne aplikacje backendowe, w których znajduje się pełna logika biznesowa systemu.",
-    icon: Smartphone,
+    icon: Database,
     bgClass: "bg-[#242a3b]",
   },
   {
@@ -22,7 +22,7 @@ const services = [
     title: "Wdrożenie i utrzymanie aplikacji",
     description:
       "Zajmuję się wdrażaniem i utrzymaniem aplikacji, dbając o ich stabilne i bezawaryjne działanie.",
-    icon: LayoutPanelTop,
+    icon: UserRoundCogIcon,
     bgClass: "bg-[#1023b8]",
   },
   {
@@ -30,7 +30,7 @@ const services = [
     title: "Administracja systemów",
     description:
       "Administruję serwerami, usługami i infrastrukturą potrzebną do działania systemów.",
-    icon: Star,
+    icon: Server,
     bgClass: "bg-[#4d8fe9]",
   },
 ];
