@@ -3,6 +3,7 @@
 services:
   frontend:
     image: robertcieplinski/mypage:latest
+    pull_policy: always
     container_name: mypage-frontend
     env_file:
       - .env.production
